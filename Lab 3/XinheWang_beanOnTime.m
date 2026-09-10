@@ -16,7 +16,7 @@ This is problem 2 for BME313L Fall26 lab 3.
 %}    
 
 
-function t1 = beanOnTime()
+function t1 = XinheWang_beanOnTime()
 
     t = 0.5;
     h = 0.00001;
