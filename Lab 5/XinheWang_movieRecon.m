@@ -66,7 +66,7 @@ function y = forwardSub(L,b)
         val = 0;
         
         % Plugs in all the previous values to calculate the total sum
-        for j = 1:i
+        for j = 1:i-1
             val = val + L(i, j) * y(j);
         end
 
@@ -83,7 +83,7 @@ function x = backSub(U,b)
     x = zeros(n, 1);
 
     % Instead of starting at the top, we start at the bottom
-    for i = n-1:-1:1
+    for i = n:-1:1
 
         val = 0;
         for j = i+1:n
