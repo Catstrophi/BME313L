@@ -66,7 +66,8 @@ end
 % calculates the cost per digit
 jacobiCost = (jacobiIter(end) - jacobiIter(1)) / (p(end) - p(1));
 gsCost = (gsIter(end) - gsIter(1)) / (p(end) - p(1));
-
+sorCost = (sorIter(end) - sorIter(1)) / (p(end) - p(1));
+disp("Cost: " + sorCost)
 % plots all three functions
 plot(p, jacobiIter, "b-o", p, gsIter, "r-o", p, sorIter, "g-o")
 
